@@ -23,7 +23,6 @@ The project follows a *Scrum-based development approach* with roles such as *Pro
 *📌 Setup Instructions*  
 *🔹 Clone the Repository*  
 bash
-git clone https://github.com/your-username/your-repo.git
 cd your-repo
 
 *🔹 Install Dependencies*  
