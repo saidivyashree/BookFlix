@@ -1,4 +1,4 @@
-📚 Online Bookstore  
+📚 Online Bookstore 
 
  *📝 Description*  
 The *Online Bookstore* is a web-based platform designed to provide users with a seamless experience for *browsing, searching, and purchasing books. It includes features like **user authentication, book catalog, shopping cart, order management, and secure checkout*.  
