@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - development
+      - testing
+      - production
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Verify ESLint Installation
+        run: npx eslint -v  # Ensure eslint is installed
+
+      - name: Run Linting
+        run: npx eslint . --ext .js,.mjs  # Use 'npx' to run locally installed ESLint
+
+      - name: Run Tests
+        run: npm test
+
+      - name: Build Project
+        run: npm run build
