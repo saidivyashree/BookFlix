@@ -1,4 +1,5 @@
-test('Sample test', () => {
-    expect(1 + 1).toBe(2);
-  });
-  
+const { test, expect } = require('@jest/globals');
+
+test("Example test", () => {
+  expect(2 + 2).toBe(4);
+});
