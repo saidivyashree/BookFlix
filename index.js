@@ -1,3 +1,4 @@
+require('dotenv').config(); // Load environment variables
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -9,8 +10,14 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Configuration
-const mongoURI = "mongodb+srv://Divya-BookFlix:bookFlix@cluster0.qlwwa.mongodb.net/BookInventory?retryWrites=true&w=majority";
+// MongoDB Configuration (Now using environment variable)
+const mongoURI = process.env.MONGO_URI;
+
+// Check if MongoDB URI is loaded
+if (!mongoURI) {
+    console.error("❌ Error: MONGO_URI is not set in .env file");
+    process.exit(1);
+}
 
 // Connect to MongoDB
 mongoose.connect(mongoURI)
