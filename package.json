@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "lint": "eslint . --ext .js,.mjs",
-    "test": "jest"
-  },
+  "start": "nodemon index.js",
+  "lint": "eslint . --ext .js,.mjs",
+  "test": "jest",
+  "build": "echo 'No build step needed'"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
