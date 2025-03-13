@@ -25,7 +25,10 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci  # Ensures a clean install using package-lock.json
+
+      - name: Verify ESLint Installation
+        run: npx eslint --version  # Ensures ESLint is installed
 
       - name: Run Linting
         run: npm run lint
