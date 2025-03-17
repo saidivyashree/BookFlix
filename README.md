@@ -18,11 +18,11 @@
 
  🛠 Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript (React/Next.js)
+- **Frontend**: JavaScript (React/Next.js)
 - **Backend**: Node.js (Express.js)
-- **Database**: MongoDB / PostgreSQL
-- **Authentication**: JWT / OAuth
-- **Deployment**: Docker, Terraform, CI/CD Pipelines
+- **Database**: MongoDB 
+- **Authentication**: JWT 
+- **Deployment**: Docker, Github, CI/CD Pipelines
 - **Security**: DevSecOps practices, OWASP Juice Shop reference
 
 ---
